@@ -10,6 +10,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Osiyo Grand Hotel</title>
     </head>
@@ -17,7 +20,7 @@
 
         <!------------   Navbar   ----------->
 
-        <nav id="tt" class="navbar navbar-expand-lg bg---bs-warning-border-subtle-tertiary">
+        <nav id="tt" class="navbar sticky-top navbar-expand-lg bg---bs-warning-border-subtle-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Osiyo Grand Hotel</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,11 +30,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#xona">XONALAR</a>
-                        <a class="nav-link" href="#ovqat">TAOMLAR</a>
-                        <a class="nav-link " href="#kabob">KABOBLAR</a>
-                        <a class="nav-link" href="#salat">SALATLAR</a>
-                        <a class="nav-link " href="#man">MANZILIMIZ</a>
+                        <a class="nav-link navbar_child" href="#about">HAQIDA</a>
+                        <a class="nav-link navbar_child" href="#rooms">XONALAR</a>
+                        <a class="nav-link navbar_child" href="#kabob">NEGA AYNAN BIZ</a>
+                        <a class="nav-link navbar_child" href="#man">MANZIL</a>
                     </div>
                 </div>
             </div>
@@ -42,21 +44,21 @@
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
+                aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="fasad1.jpg" class="d-block w-100" alt="...">
+                    <img src="img/entrance_2.jpg" class="d-block w-100" alt="silder 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="zal2.jpg" class="d-block w-100" alt="...">
+                    <img src="img/entrance_3.jpg" class="d-block w-100" alt="silder 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="zal1.jpg" class="d-block w-100" alt="...">
+                    <img src="img/registration_3.jpg" class="d-block w-100" alt="slider 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -69,6 +71,67 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
+        
+        <!------------   About Us   ----------->    
+
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col about_child1">
+                    <h1>Biz haqimizda</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi provident
+                        vel, reprehenderit fugiat optio adipisci sit sed, saepe nihil laborum
+                        repudiandae eligendi quae? Nam ullam sint commodi facere culpa. Fugiat?
+                    </p>
+                </div>
+                <div class="col about_child2">
+                    <img src="img/about_us.jpg" alt="about us">
+                </div>
+            </div>
+        </div>
+
+        <!------------   Rooms   -----------> 
+
+        <div id="rooms">
+            <h1>Xonalar</h1>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/lux_2.jpg" class="card-img-top" alt="Lyuks Xona">
+                        <div class="card-body">
+                            <h6>Lyuks</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/double.jpg" class="card-img-top" alt="double">
+                        <div class="card-body">
+                            <h6>Ikki kishilik</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/twin.jpg" class="card-img-top" alt="twin">
+                        <div class="card-body">
+                            <h6>Ikki kishilik alohida</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="xona1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h6>Fitness Zali</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------   Why Us   -----------> 
+
+
     </body>
 </html>
