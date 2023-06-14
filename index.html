@@ -12,6 +12,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Osiyo Grand Hotel</title>
@@ -32,8 +33,9 @@
                     <div class="navbar-nav">
                         <a class="nav-link navbar_child" href="#about">HAQIDA</a>
                         <a class="nav-link navbar_child" href="#rooms">XONALAR</a>
-                        <a class="nav-link navbar_child" href="#kabob">NEGA AYNAN BIZ</a>
-                        <a class="nav-link navbar_child" href="#man">MANZIL</a>
+                        <a class="nav-link navbar_child" href="#whyus">NEGA AYNAN BIZ</a>
+                        <a class="nav-link navbar_child" href="#gallery">RASMLAR</a>
+                        <a class="nav-link navbar_child" href="#location">MANZIL</a>
                     </div>
                 </div>
             </div>
@@ -79,9 +81,14 @@
             <div class="row">
                 <div class="col about_child1">
                     <h1>Biz haqimizda</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi provident
-                        vel, reprehenderit fugiat optio adipisci sit sed, saepe nihil laborum
-                        repudiandae eligendi quae? Nam ullam sint commodi facere culpa. Fugiat?
+                    <p>
+                        Osiyo Grand Hotel 2012-yil 2-maydan sanasidan faoliyat yuritishni 
+                        boshlagan. Biz sizga qulay va shinam xonalar arzon narxda olish bilan birgalikda boshqa 
+                        ko'plab xizmatlarni taklif qilamiz. Bizning mehmonxonamiz shahar markazida 
+                        joylashgan bo'lib, sizga quyidagi xizmatlarni taklif qiladi: taksi,
+                         fitness, wifi, konferensiyalar zali, bar, kir yuvish mashinasi, seyf, avto turargoh.
+                         "Osiyo Grand" mehmonxonasida 20 ta nafis va shinam xonalar mavjud. 40 kishiga mo'ljallangan umumiy
+                         yotoq joylarimiz mavjud. 
                     </p>
                 </div>
                 <div class="col about_child2">
@@ -121,9 +128,9 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="xona1.jpg" class="card-img-top" alt="...">
+                        <img style="height: 270px;" src="img/triple.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6>Fitness Zali</h6>
+                            <h6>Uch kishilik</h6>
                         </div>
                     </div>
                 </div>
@@ -132,6 +139,170 @@
 
         <!------------   Why Us   -----------> 
 
+        <div id="whyus">
+            <h1>Nega aynan biz</h1>
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4 whyus_wrapper">
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/comfort.svg" class="card-img-top whyus_icon" alt="Qulay">
+                        <div class="card-body">
+                            <h6>YUQORI DARAJADAGI QULAYLIK</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/fitness.svg" class="card-img-top whyus_icon" alt="fitness">
+                        <div class="card-body">
+                            <h6>FITNESS ZAL</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/restaurant.svg" class="card-img-top whyus_icon" alt="restaurant">
+                        <div class="card-body">
+                            <h6>RESTORANT</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/location.svg" class="card-img-top whyus_icon" alt="location">
+                        <div class="card-body">
+                            <h6>JOYLASHUV</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/taxi.svg" class="card-img-top whyus_icon" alt="Taksi">
+                        <div class="card-body">
+                            <h6>TAKSI</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/bar.svg" class="card-img-top whyus_icon" alt="bar">
+                        <div class="card-body">
+                            <h6>BAR</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="IMG/wifi.svg" class="card-img-top whyus_icon" alt="restaurant">
+                        <div class="card-body">
+                            <h6>WIFI</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="whyus_div">
+                        <img src="img/conference.svg" class="card-img-top whyus_icon" alt="location">
+                        <div class="card-body">
+                            <h6>Konferensiyalar zali</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <!------------   Gallery   ----------->
+        <div id="gallery">
+            <h1>Foto Lavhalar</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/slide1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/slide2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/slide3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/slide4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/slide5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/slide6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/slide7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/bathroom.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/triple.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/twin.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/lux.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/double.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/relax.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/registration.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/entrance.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!------------   Location   -----------> 
+
+        <div id="location">
+            <h1>Manzil</h1>
+            <div id="location_wrapper">
+                <div id="location_details">
+                    <div class="lwrapper_child">
+                        <div>
+                            <img src="img/call.svg" alt="Telefon">
+                        </div>
+                        <div>
+                            <p>+99872 226 19 79</p>
+                            <p>+99872 226 62 67</p>
+                        </div>
+                    </div>
+                    <div class="lwrapper_child">
+                        <div>
+                            <img src="img/location.svg" alt="lokatsiya">
+                        </div>
+                        <div>
+                            <p>Jizzax sh. Zargarlik mah.</p>
+                            <p>Mo'ljal Osiyo Restorani</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d381.281885332889!2d67.82474074405066!3d40.13660140134612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b2969c5dce7847%3A0x3fd0d26cbac56a04!2s%22OSIYO%20GRAND%22%20HOTEL!5e0!3m2!1sru!2s!4v1686638341035!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div> 
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+          
+            const swiper = new Swiper(...)
+          </script>
+        <script type="module" src="main.js"></script>
     </body>
 </html>
