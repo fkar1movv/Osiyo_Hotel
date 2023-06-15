@@ -31,9 +31,10 @@ nav{
     display:inline-block;
     margin-top: 15px;
     color:black;
+    padding-right: 0;
+    padding-left: 0;
 }
 .navbar-nav{
-    margin-right: 150px;
     margin-left:200px;
 }
 .navbar_child:after {
@@ -74,6 +75,10 @@ nav{
     background-color: rgba(233, 233, 233, 0.479);
     padding: 100px 100px;
     text-align: center;
+}
+.card img{
+    width: auto;
+    height: 265px;
 }
 #rooms h1{
     margin-bottom: 50px;
@@ -171,7 +176,7 @@ iframe{
 
 @media(max-width: 1180px) {
     #whyus{
-        margin: 50px 100px;
+        margin: auto;
         text-align: center;
     }
     
@@ -183,6 +188,12 @@ iframe{
     #location_details{
         padding: 70px;
         margin-bottom: 50px;
+    }
+    .card img{
+        height: 200px;
+    }
+    .card{
+        height: auto;
     }
 }
 @media(max-width: 800px){
@@ -235,5 +246,43 @@ iframe{
     #location{
         padding: 20px 10px;
         background-image: none;
+    }
+    #rooms{
+        justify-content: center;
+    }
+    #why_us{
+        margin: 10px;
+    }
+    .whyus_div{
+        width: 220px;
+        height: 220px;
+        margin-right: 0px;
+    }
+    .row{
+        width: auto;
+        justify-content: center;
+    }
+    .col{
+        width: 220px;
+        height: 220px;
+        padding: 0;
+    }
+    .whyus_wrapper{
+        margin-left: 20px;
+        width: 240px;
+    }
+    .swiper-wrapper{
+        max-width: 240px;
+        height: 270px;
+    }
+    .swiper-slide{
+        width: 250px;
+    }
+    .swiper-slide img{
+        width: 250px;
+        height: 250px;
+    }
+    #about{
+        height: 800px;
     }
 }
